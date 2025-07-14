@@ -1,3 +1,31 @@
 name: software-example
 title: Research software example
-description:
+git_repo_url: https://github.com/petebachant/Software_Example
+environments:
+  main:
+    kind: uv-venv
+    path: requirements.txt
+    python: "3.13"
+    prefix: .venv
+pipeline:
+  stages:
+    run:
+      kind: python-script
+      script_path: run.py
+      environment: main
+      inputs:
+        - model.py
+      outputs:
+        - two-dim/data
+        - two-dim/snapshots
+    post-process:
+      kind: python-script
+      script_path: postprocess.py
+      environment: main
+      inputs:
+        - from_stage_outputs: run
+        - model.py
+        - analysis_utils.py
+        - plotting_utils.py
+      outputs:
+        - two-dim/analysis
