@@ -1,0 +1,120 @@
+{
+  "id": "fcc9346dedc44e589f2aa5b4474536c0",
+  "system_id": "33a56a1e250ba3e36deafc1209602068f30a4b12",
+  "start_time": "2025-07-14T20:44:32.821713+00:00",
+  "end_time": "2025-07-14T21:15:05.743664+00:00",
+  "targets": [],
+  "force": false,
+  "dvc_args": [],
+  "status": "completed",
+  "stages": {
+    "_check-env-main": {
+      "start_time": "2025-07-14T20:44:32.966000",
+      "end_time": "2025-07-14T20:44:33.606000",
+      "status": "completed"
+    },
+    "run": {
+      "start_time": "2025-07-14T20:44:33.606000",
+      "end_time": "2025-07-14T21:11:48.605000",
+      "status": "completed"
+    },
+    "post-process": {
+      "start_time": "2025-07-14T21:11:48.605000"
+    }
+  },
+  "git_rev": "3bae54bd8d8742ece53a7817438db203d89aa438",
+  "git_branch": "calkit",
+  "git_changed_files_before": [
+    ".dvc/config",
+    "calkit.yaml"
+  ],
+  "git_staged_files_before": [],
+  "git_untracked_files_before": [
+    ".calkit/env-locks/main.txt",
+    ".calkit/systems/33a56a1e250ba3e36deafc1209602068f30a4b12.json",
+    "dvc.lock",
+    "dvc.yaml"
+  ],
+  "git_changed_files_after": [
+    ".dvc/config",
+    "calkit.yaml"
+  ],
+  "git_staged_files_after": [],
+  "git_untracked_files_after": [
+    ".calkit/env-locks/main.txt",
+    ".calkit/logs/2025-07-14T20-44-32-fcc9346dedc44e589f2aa5b4474536c0.log",
+    ".calkit/systems/33a56a1e250ba3e36deafc1209602068f30a4b12.json",
+    "dvc.lock",
+    "dvc.yaml"
+  ],
+  "dvc_status_before": {
+    "_check-env-main": [
+      "always changed"
+    ],
+    "run": [
+      {
+        "changed deps": {
+          "run.py": "modified",
+          "model.py": "modified",
+          ".calkit/env-locks/main.txt": "modified"
+        }
+      },
+      {
+        "changed outs": {
+          "two-dim/data": "modified",
+          "two-dim/snapshots": "modified"
+        }
+      }
+    ],
+    "post-process": [
+      {
+        "changed deps": {
+          "postprocess.py": "modified",
+          "model.py": "modified",
+          "analysis_utils.py": "modified",
+          "plotting_utils.py": "modified",
+          ".calkit/env-locks/main.txt": "modified",
+          "two-dim/data": "modified",
+          "two-dim/snapshots": "modified"
+        }
+      },
+      {
+        "changed outs": {
+          "two-dim/analysis": "deleted"
+        }
+      }
+    ]
+  },
+  "dvc_data_status_before": {
+    "not_in_cache": [],
+    "not_in_remote": [],
+    "committed": {},
+    "uncommitted": {
+      "added": [
+        "two-dim/data/",
+        "two-dim/snapshots/"
+      ]
+    },
+    "untracked": [],
+    "unchanged": []
+  },
+  "dvc_status_after": {
+    "_check-env-main": [
+      "always changed"
+    ]
+  },
+  "dvc_data_status_after": {
+    "not_in_cache": [],
+    "not_in_remote": [],
+    "committed": {
+      "added": [
+        "two-dim/data/",
+        "two-dim/snapshots/",
+        "two-dim/analysis/"
+      ]
+    },
+    "uncommitted": {},
+    "untracked": [],
+    "unchanged": []
+  }
+}

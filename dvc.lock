@@ -1,0 +1,90 @@
+schema: '2.0'
+stages:
+  _check-env-main:
+    cmd: calkit check environment --name main
+    deps:
+    - path: requirements.txt
+      hash: md5
+      md5: 82abbee06642a7390ea04a88b634d25c
+      size: 150
+    outs:
+    - path: .calkit/env-locks/main.txt
+      hash: md5
+      md5: c13ae3b69fb5805000cb9253d0363a3c
+      size: 697
+  plot:
+    cmd: calkit xenv -n main --no-check -- python run.py
+    deps:
+    - path: .calkit/env-locks/main.txt
+      hash: md5
+      md5: c13ae3b69fb5805000cb9253d0363a3c
+      size: 697
+    - path: run.py
+      hash: md5
+      md5: b63f09db19f1a4a7b49780e0ed3865b2
+      size: 917
+  run:
+    cmd: calkit xenv -n main --no-check -- python run.py
+    deps:
+    - path: .calkit/env-locks/main.txt
+      hash: md5
+      md5: c13ae3b69fb5805000cb9253d0363a3c
+      size: 697
+    - path: model.py
+      hash: md5
+      md5: 33e480dd5d40b3cf20089da48324f028
+      size: 22161
+    - path: run.py
+      hash: md5
+      md5: b63f09db19f1a4a7b49780e0ed3865b2
+      size: 917
+    outs:
+    - path: two-dim/data
+      hash: md5
+      md5: aa280166253ad3795eec9e5fa1a27d1c.dir
+      size: 81601600
+      nfiles: 400
+    - path: two-dim/snapshots
+      hash: md5
+      md5: fdac5283cbb7dfe7e8ddacf2a34bd142.dir
+      size: 10205211
+      nfiles: 401
+  post-process:
+    cmd: calkit xenv -n main --no-check -- python postprocess.py
+    deps:
+    - path: .calkit/env-locks/main.txt
+      hash: md5
+      md5: c13ae3b69fb5805000cb9253d0363a3c
+      size: 697
+    - path: analysis_utils.py
+      hash: md5
+      md5: 82be04856bdf017c4ee9c8bc5789afbd
+      size: 5010
+    - path: model.py
+      hash: md5
+      md5: 33e480dd5d40b3cf20089da48324f028
+      size: 22161
+    - path: plotting_utils.py
+      hash: md5
+      md5: dbaf22a0d47f64e521121f461eb06654
+      size: 3435
+    - path: postprocess.py
+      hash: md5
+      md5: 489948e2e3abc318c9c925dd07cec6d2
+      size: 1996
+    - path: two-dim/data
+      hash: md5
+      md5: aa280166253ad3795eec9e5fa1a27d1c.dir
+      size: 81601600
+      nfiles: 400
+    - path: two-dim/snapshots
+      hash: md5
+      md5: fdac5283cbb7dfe7e8ddacf2a34bd142.dir
+      size: 10205211
+      nfiles: 401
+    outs:
+    - path: two-dim/analysis
+      hash: md5
+      md5: 6e8afd4c5178237e73daf0fc30fb5753.dir
+      size: 167884220
+      nfiles: 2400

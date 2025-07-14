@@ -1,0 +1,94 @@
+{
+  "id": "c57edc9bd0bc43a7bc24db7132fce378",
+  "system_id": "33a56a1e250ba3e36deafc1209602068f30a4b12",
+  "start_time": "2025-07-14T22:05:58.370008+00:00",
+  "end_time": "2025-07-14T22:05:59.325817+00:00",
+  "targets": [],
+  "force": false,
+  "dvc_args": [],
+  "status": "completed",
+  "stages": {
+    "_check-env-main": {
+      "start_time": "2025-07-14T22:05:58.506000",
+      "end_time": "2025-07-14T22:05:59.037000",
+      "status": "completed"
+    },
+    "run": {
+      "start_time": "2025-07-14T22:05:59.037000",
+      "end_time": "2025-07-14T22:05:59.037000",
+      "status": "skipped"
+    },
+    "post-process": {
+      "start_time": "2025-07-14T22:05:59.083000",
+      "end_time": "2025-07-14T22:05:59.083000",
+      "status": "skipped"
+    }
+  },
+  "git_rev": "3bae54bd8d8742ece53a7817438db203d89aa438",
+  "git_branch": "calkit",
+  "git_changed_files_before": [],
+  "git_staged_files_before": [
+    ".dvc/config",
+    "calkit.yaml"
+  ],
+  "git_untracked_files_before": [
+    ".calkit/env-locks/main.txt",
+    ".calkit/logs/2025-07-14T20-44-32-fcc9346dedc44e589f2aa5b4474536c0.log",
+    ".calkit/runs/2025-07-14T20-44-32-fcc9346dedc44e589f2aa5b4474536c0.json",
+    ".calkit/systems/33a56a1e250ba3e36deafc1209602068f30a4b12.json",
+    "dvc.lock",
+    "dvc.yaml"
+  ],
+  "git_changed_files_after": [],
+  "git_staged_files_after": [
+    ".dvc/config",
+    "calkit.yaml"
+  ],
+  "git_untracked_files_after": [
+    ".calkit/env-locks/main.txt",
+    ".calkit/logs/2025-07-14T20-44-32-fcc9346dedc44e589f2aa5b4474536c0.log",
+    ".calkit/logs/2025-07-14T22-05-58-c57edc9bd0bc43a7bc24db7132fce378.log",
+    ".calkit/runs/2025-07-14T20-44-32-fcc9346dedc44e589f2aa5b4474536c0.json",
+    ".calkit/systems/33a56a1e250ba3e36deafc1209602068f30a4b12.json",
+    "dvc.lock",
+    "dvc.yaml"
+  ],
+  "dvc_status_before": {
+    "_check-env-main": [
+      "always changed"
+    ]
+  },
+  "dvc_data_status_before": {
+    "not_in_cache": [],
+    "not_in_remote": [],
+    "committed": {
+      "added": [
+        "two-dim/snapshots/",
+        "two-dim/data/",
+        "two-dim/analysis/"
+      ]
+    },
+    "uncommitted": {},
+    "untracked": [],
+    "unchanged": []
+  },
+  "dvc_status_after": {
+    "_check-env-main": [
+      "always changed"
+    ]
+  },
+  "dvc_data_status_after": {
+    "not_in_cache": [],
+    "not_in_remote": [],
+    "committed": {
+      "added": [
+        "two-dim/snapshots/",
+        "two-dim/data/",
+        "two-dim/analysis/"
+      ]
+    },
+    "uncommitted": {},
+    "untracked": [],
+    "unchanged": []
+  }
+}
