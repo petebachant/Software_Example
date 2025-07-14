@@ -27,6 +27,7 @@ stages:
       - model.py
       - analysis_utils.py
       - plotting_utils.py
+      - plots.mplstyle
       - .calkit/env-locks/main.txt
       - two-dim/data
       - two-dim/snapshots

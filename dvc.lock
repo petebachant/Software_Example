@@ -64,6 +64,10 @@ stages:
       hash: md5
       md5: 33e480dd5d40b3cf20089da48324f028
       size: 22161
+    - path: plots.mplstyle
+      hash: md5
+      md5: 17ad5c2a561e2ab40a3c3ae96a8017ea
+      size: 1322
     - path: plotting_utils.py
       hash: md5
       md5: dbaf22a0d47f64e521121f461eb06654

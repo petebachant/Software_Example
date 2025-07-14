@@ -1,0 +1,86 @@
+{
+  "id": "f8af95731ab34fb2bc2f97a4e00a483b",
+  "system_id": "33a56a1e250ba3e36deafc1209602068f30a4b12",
+  "start_time": "2025-07-14T23:00:51.694471+00:00",
+  "end_time": "2025-07-14T23:04:12.263414+00:00",
+  "targets": [],
+  "force": false,
+  "dvc_args": [],
+  "status": "completed",
+  "stages": {
+    "_check-env-main": {
+      "start_time": "2025-07-14T23:00:51.811000",
+      "end_time": "2025-07-14T23:00:52.316000",
+      "status": "completed"
+    },
+    "run": {
+      "start_time": "2025-07-14T23:00:52.316000",
+      "end_time": "2025-07-14T23:00:52.316000",
+      "status": "skipped"
+    },
+    "post-process": {
+      "start_time": "2025-07-14T23:00:52.484000"
+    }
+  },
+  "git_rev": "be762c8122ad24df309a7fc40a4c5f7d3baf8a4c",
+  "git_branch": "calkit",
+  "git_changed_files_before": [
+    "calkit.yaml",
+    "dvc.yaml"
+  ],
+  "git_staged_files_before": [],
+  "git_untracked_files_before": [
+    ".calkit/runs/2025-07-14T23-00-43-854132f1874c40029b4471f346344875.json"
+  ],
+  "git_changed_files_after": [
+    "calkit.yaml",
+    "dvc.yaml"
+  ],
+  "git_staged_files_after": [
+    "dvc.lock"
+  ],
+  "git_untracked_files_after": [
+    ".calkit/runs/2025-07-14T23-00-43-854132f1874c40029b4471f346344875.json"
+  ],
+  "dvc_status_before": {
+    "_check-env-main": [
+      "always changed"
+    ],
+    "post-process": [
+      {
+        "changed deps": {
+          "plots.mplstyle": "modified"
+        }
+      }
+    ]
+  },
+  "dvc_data_status_before": {
+    "not_in_cache": [],
+    "not_in_remote": [],
+    "committed": {},
+    "uncommitted": {},
+    "untracked": [],
+    "unchanged": [
+      "two-dim/analysis/",
+      "two-dim/snapshots/",
+      "two-dim/data/"
+    ]
+  },
+  "dvc_status_after": {
+    "_check-env-main": [
+      "always changed"
+    ]
+  },
+  "dvc_data_status_after": {
+    "not_in_cache": [],
+    "not_in_remote": [],
+    "committed": {},
+    "uncommitted": {},
+    "untracked": [],
+    "unchanged": [
+      "two-dim/analysis/",
+      "two-dim/snapshots/",
+      "two-dim/data/"
+    ]
+  }
+}

@@ -27,5 +27,6 @@ pipeline:
         - model.py
         - analysis_utils.py
         - plotting_utils.py
+        - plots.mplstyle
       outputs:
         - two-dim/analysis
