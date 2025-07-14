@@ -5,8 +5,13 @@ environments:
   main:
     kind: uv-venv
     path: requirements.txt
-    python: "3.13"
+    python: "3.13.5"
     prefix: .venv
+  nb:
+    kind: uv-venv
+    path: requirements-nb.txt
+    python: "3.13.5"
+    prefix: .venv2
 pipeline:
   stages:
     run:
@@ -30,3 +35,20 @@ pipeline:
         - plots.mplstyle
       outputs:
         - two-dim/analysis
+    run-notebook:
+      kind: jupyter-notebook
+      notebook_path: example.ipynb
+      environment: nb
+      inputs:
+        - model.py
+      outputs:
+        - two-dim-nb
+      html_storage: git
+      cleaned_ipynb_storage: git
+      executed_ipynb_storage: git
+notebooks:
+  - path: example.ipynb
+    title: Example notebook
+    stage: run-notebook
+showcase:
+  - notebook: example.ipynb

@@ -92,3 +92,56 @@ stages:
       md5: 6e8afd4c5178237e73daf0fc30fb5753.dir
       size: 167884220
       nfiles: 2400
+  _clean-nb-run-notebook:
+    cmd: calkit nb clean "example.ipynb"
+    deps:
+    - path: example.ipynb
+      hash: md5
+      md5: f782c8f22a65d3ecde70351faa057812
+      size: 489746
+    outs:
+    - path: .calkit/notebooks/cleaned/example.ipynb
+      hash: md5
+      md5: f810da7fd7408e6b94004f14fc78d1ec
+      size: 7188
+  _check-env-nb:
+    cmd: calkit check environment --name nb
+    deps:
+    - path: requirements-nb.txt
+      hash: md5
+      md5: 4729ef3732347ce8ad183a5b73d96137
+      size: 90
+    outs:
+    - path: .calkit/env-locks/nb.txt
+      hash: md5
+      md5: 45530589ff78fee20c3f0bf2a2a04e40
+      size: 2038
+  run-notebook:
+    cmd: calkit nb execute --environment nb --no-check --to html "example.ipynb"
+    deps:
+    - path: .calkit/env-locks/nb.txt
+      hash: md5
+      md5: 45530589ff78fee20c3f0bf2a2a04e40
+      size: 2038
+    - path: .calkit/notebooks/cleaned/example.ipynb
+      hash: md5
+      md5: f810da7fd7408e6b94004f14fc78d1ec
+      size: 7188
+    - path: model.py
+      hash: md5
+      md5: 33e480dd5d40b3cf20089da48324f028
+      size: 22161
+    outs:
+    - path: .calkit/notebooks/executed/example.ipynb
+      hash: md5
+      md5: 83b8746382cd2df4392207ce828131f0
+      size: 504564
+    - path: .calkit/notebooks/html/example.html
+      hash: md5
+      md5: 03ffb2710b49df99c53430dc4f20dfb9
+      size: 813001
+    - path: two-dim-nb
+      hash: md5
+      md5: 920db499c15dbde008d6eb92359ba23a.dir
+      size: 458818
+      nfiles: 5

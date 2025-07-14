@@ -1,0 +1,135 @@
+{
+  "id": "44287af345dc404ca340fd5e976e825b",
+  "system_id": "33a56a1e250ba3e36deafc1209602068f30a4b12",
+  "start_time": "2025-07-14T23:13:26.100291+00:00",
+  "end_time": "2025-07-14T23:13:27.523953+00:00",
+  "targets": [],
+  "force": false,
+  "dvc_args": [],
+  "status": "completed",
+  "stages": {
+    "_check-env-main": {
+      "start_time": "2025-07-14T23:13:26.253000",
+      "end_time": "2025-07-14T23:13:26.750000",
+      "status": "completed"
+    },
+    "_check-env-nb": {
+      "start_time": "2025-07-14T23:13:26.750000",
+      "end_time": "2025-07-14T23:13:27.236000",
+      "status": "completed"
+    },
+    "run": {
+      "start_time": "2025-07-14T23:13:27.236000",
+      "end_time": "2025-07-14T23:13:27.236000",
+      "status": "skipped"
+    },
+    "post-process": {
+      "start_time": "2025-07-14T23:13:27.280000",
+      "end_time": "2025-07-14T23:13:27.280000",
+      "status": "skipped"
+    },
+    "_clean-nb-run-notebook": {
+      "start_time": "2025-07-14T23:13:27.281000",
+      "end_time": "2025-07-14T23:13:27.281000",
+      "status": "skipped"
+    },
+    "run-notebook": {
+      "start_time": "2025-07-14T23:13:27.284000",
+      "end_time": "2025-07-14T23:13:27.284000",
+      "status": "skipped"
+    }
+  },
+  "git_rev": "22e5d72cfe895eda7f3fb5b0ab2d250a96b6aacd",
+  "git_branch": "calkit",
+  "git_changed_files_before": [
+    "calkit.yaml",
+    "dvc.yaml",
+    "example.ipynb"
+  ],
+  "git_staged_files_before": [
+    ".gitignore",
+    "dvc.lock"
+  ],
+  "git_untracked_files_before": [
+    ".calkit/env-locks/nb.txt",
+    ".calkit/notebooks/cleaned/example.ipynb",
+    ".calkit/notebooks/executed/example.ipynb",
+    ".calkit/notebooks/html/example.html",
+    ".calkit/runs/2025-07-14T23-09-38-d52ab85039be4b059cc2e80375c32cf8.json",
+    ".calkit/runs/2025-07-14T23-11-47-1eb6f0710eb045e09711c3a6f725908f.json",
+    ".calkit/runs/2025-07-14T23-12-01-067247f95b26447ebfec1e888d5ff5d2.json",
+    "requirements-nb.txt"
+  ],
+  "git_changed_files_after": [
+    "calkit.yaml",
+    "dvc.yaml",
+    "example.ipynb"
+  ],
+  "git_staged_files_after": [
+    ".gitignore",
+    "dvc.lock"
+  ],
+  "git_untracked_files_after": [
+    ".calkit/env-locks/nb.txt",
+    ".calkit/notebooks/cleaned/example.ipynb",
+    ".calkit/notebooks/executed/example.ipynb",
+    ".calkit/notebooks/html/example.html",
+    ".calkit/runs/2025-07-14T23-09-38-d52ab85039be4b059cc2e80375c32cf8.json",
+    ".calkit/runs/2025-07-14T23-11-47-1eb6f0710eb045e09711c3a6f725908f.json",
+    ".calkit/runs/2025-07-14T23-12-01-067247f95b26447ebfec1e888d5ff5d2.json",
+    "requirements-nb.txt"
+  ],
+  "dvc_status_before": {
+    "_check-env-main": [
+      "always changed"
+    ],
+    "_check-env-nb": [
+      {
+        "changed deps": {
+          "requirements-nb.txt": "modified"
+        }
+      },
+      "always changed"
+    ]
+  },
+  "dvc_data_status_before": {
+    "not_in_cache": [],
+    "not_in_remote": [],
+    "committed": {
+      "added": [
+        "two-dim-nb/"
+      ]
+    },
+    "uncommitted": {},
+    "untracked": [],
+    "unchanged": [
+      "two-dim/snapshots/",
+      "two-dim/data/",
+      "two-dim/analysis/"
+    ]
+  },
+  "dvc_status_after": {
+    "_check-env-main": [
+      "always changed"
+    ],
+    "_check-env-nb": [
+      "always changed"
+    ]
+  },
+  "dvc_data_status_after": {
+    "not_in_cache": [],
+    "not_in_remote": [],
+    "committed": {
+      "added": [
+        "two-dim-nb/"
+      ]
+    },
+    "uncommitted": {},
+    "untracked": [],
+    "unchanged": [
+      "two-dim/snapshots/",
+      "two-dim/data/",
+      "two-dim/analysis/"
+    ]
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "id": "1eb6f0710eb045e09711c3a6f725908f",
+  "system_id": "33a56a1e250ba3e36deafc1209602068f30a4b12",
+  "start_time": "2025-07-14T23:11:47.969999+00:00",
+  "end_time": "2025-07-14T23:11:48.889747+00:00",
+  "targets": [],
+  "force": false,
+  "dvc_args": [],
+  "status": "failed",
+  "stages": {
+    "_check-env-main": {
+      "start_time": "2025-07-14T23:11:48.122000"
+    },
+    "_check-env-nb": {
+      "end_time": "2025-07-14T23:11:48.633000",
+      "status": "failed"
+    }
+  },
+  "git_rev": "22e5d72cfe895eda7f3fb5b0ab2d250a96b6aacd",
+  "git_branch": "calkit",
+  "git_changed_files_before": [
+    "calkit.yaml",
+    "dvc.lock",
+    "dvc.yaml",
+    "example.ipynb"
+  ],
+  "git_staged_files_before": [],
+  "git_untracked_files_before": [
+    ".calkit/notebooks/cleaned/example.ipynb",
+    ".calkit/runs/2025-07-14T23-09-38-d52ab85039be4b059cc2e80375c32cf8.json",
+    "requirements-nb.txt"
+  ],
+  "git_changed_files_after": [
+    "calkit.yaml",
+    "dvc.lock",
+    "dvc.yaml",
+    "example.ipynb"
+  ],
+  "git_staged_files_after": [],
+  "git_untracked_files_after": [
+    ".calkit/notebooks/cleaned/example.ipynb",
+    ".calkit/runs/2025-07-14T23-09-38-d52ab85039be4b059cc2e80375c32cf8.json",
+    "requirements-nb.txt"
+  ],
+  "dvc_status_before": {
+    "_check-env-main": [
+      "always changed"
+    ],
+    "_check-env-nb": [
+      {
+        "changed deps": {
+          "requirements-2.txt": "deleted"
+        }
+      },
+      {
+        "changed outs": {
+          ".calkit/env-locks/nb.txt": "deleted"
+        }
+      },
+      "always changed"
+    ],
+    "run-notebook": [
+      {
+        "changed deps": {
+          ".calkit/notebooks/cleaned/example.ipynb": "modified",
+          "model.py": "modified",
+          ".calkit/env-locks/nb.txt": "deleted"
+        }
+      },
+      {
+        "changed outs": {
+          "two-dim-nb": "deleted",
+          ".calkit/notebooks/executed/example.ipynb": "deleted",
+          ".calkit/notebooks/html/example.html": "deleted"
+        }
+      }
+    ]
+  },
+  "dvc_data_status_before": {
+    "not_in_cache": [],
+    "not_in_remote": [],
+    "committed": {},
+    "uncommitted": {},
+    "untracked": [],
+    "unchanged": [
+      "two-dim/analysis/",
+      "two-dim/snapshots/",
+      "two-dim/data/"
+    ]
+  },
+  "dvc_status_after": {
+    "_check-env-main": [
+      "always changed"
+    ],
+    "_check-env-nb": [
+      {
+        "changed deps": {
+          "requirements-2.txt": "deleted"
+        }
+      },
+      {
+        "changed outs": {
+          ".calkit/env-locks/nb.txt": "deleted"
+        }
+      },
+      "always changed"
+    ],
+    "run-notebook": [
+      {
+        "changed deps": {
+          ".calkit/notebooks/cleaned/example.ipynb": "modified",
+          "model.py": "modified",
+          ".calkit/env-locks/nb.txt": "deleted"
+        }
+      },
+      {
+        "changed outs": {
+          "two-dim-nb": "deleted",
+          ".calkit/notebooks/executed/example.ipynb": "deleted",
+          ".calkit/notebooks/html/example.html": "deleted"
+        }
+      }
+    ]
+  },
+  "dvc_data_status_after": {
+    "not_in_cache": [],
+    "not_in_remote": [],
+    "committed": {},
+    "uncommitted": {},
+    "untracked": [],
+    "unchanged": [
+      "two-dim/analysis/",
+      "two-dim/snapshots/",
+      "two-dim/data/"
+    ]
+  }
+}
