@@ -1,0 +1,7 @@
+__pycache__
+venv
+two-dim
+.vscode
+
+*.png
+*.mp4
