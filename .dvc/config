@@ -2,5 +2,5 @@
     remote = calkit
     autostage = true
 ['remote "calkit"']
-    url = https://api.calkit.io/projects/petebachant/software-example/dvc
+    url = https://api.calkit.io/projects/petebachant/software_example/dvc
     auth = custom
