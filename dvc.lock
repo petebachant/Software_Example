@@ -97,13 +97,13 @@ stages:
     deps:
     - path: example.ipynb
       hash: md5
-      md5: dbae48c6096fe1363434eb832e4d4d52
-      size: 7930
+      md5: cd37e06be96feea2e93c16172c301acc
+      size: 479946
     outs:
     - path: .calkit/notebooks/cleaned/example.ipynb
       hash: md5
-      md5: 233e57c681560d13173e99ff6ad078dd
-      size: 7559
+      md5: 2b2ae75d5aaa31f67dcaf3ac98bff70d
+      size: 7736
   _check-env-nb:
     cmd: calkit check environment --name nb
     deps:
@@ -125,8 +125,8 @@ stages:
       size: 3763
     - path: .calkit/notebooks/cleaned/example.ipynb
       hash: md5
-      md5: 233e57c681560d13173e99ff6ad078dd
-      size: 7559
+      md5: 2b2ae75d5aaa31f67dcaf3ac98bff70d
+      size: 7736
     - path: model.py
       hash: md5
       md5: 33e480dd5d40b3cf20089da48324f028
@@ -134,12 +134,12 @@ stages:
     outs:
     - path: .calkit/notebooks/executed/example.ipynb
       hash: md5
-      md5: cacaa31dd758461ecfbf446e51cdd688
-      size: 483849
+      md5: 631e20d48d222b19d74b6bc848fa1b50
+      size: 484024
     - path: .calkit/notebooks/html/example.html
       hash: md5
-      md5: dd73d66524c09839076385ada90eeadf
-      size: 786999
+      md5: 3695066a050f9d772a6008af3928dda4
+      size: 787569
   run-sim-nb:
     cmd: calkit xenv -n nb -- python ".calkit/notebook-stages/run-sim-nb/script.py"
     deps:
