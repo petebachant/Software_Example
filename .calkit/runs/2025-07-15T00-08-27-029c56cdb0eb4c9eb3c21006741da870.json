@@ -1,0 +1,171 @@
+{
+  "id": "029c56cdb0eb4c9eb3c21006741da870",
+  "system_id": "c2722ac36c5b9c2fe9723c1a138c2cb1088cbdce",
+  "start_time": "2025-07-15T00:08:27.248007+00:00",
+  "end_time": "2025-07-15T00:08:28.699280+00:00",
+  "targets": [],
+  "force": false,
+  "dvc_args": [],
+  "status": "completed",
+  "stages": {
+    "_check-env-main": {
+      "start_time": "2025-07-15T00:08:27.358000",
+      "end_time": "2025-07-15T00:08:27.850000",
+      "status": "completed"
+    },
+    "_check-env-nb": {
+      "start_time": "2025-07-15T00:08:27.850000",
+      "end_time": "2025-07-15T00:08:28.394000",
+      "status": "completed"
+    },
+    "run": {
+      "start_time": "2025-07-15T00:08:28.394000",
+      "end_time": "2025-07-15T00:08:28.394000",
+      "status": "skipped"
+    },
+    "post-process": {
+      "start_time": "2025-07-15T00:08:28.437000",
+      "end_time": "2025-07-15T00:08:28.437000",
+      "status": "skipped"
+    },
+    "_clean-nb-run-notebook": {
+      "start_time": "2025-07-15T00:08:28.438000",
+      "end_time": "2025-07-15T00:08:28.438000",
+      "status": "skipped"
+    },
+    "run-notebook": {
+      "start_time": "2025-07-15T00:08:28.442000",
+      "end_time": "2025-07-15T00:08:28.442000",
+      "status": "skipped"
+    },
+    "run-sim-nb": {
+      "start_time": "2025-07-15T00:08:28.445000",
+      "end_time": "2025-07-15T00:08:28.445000",
+      "status": "skipped"
+    }
+  },
+  "git_rev": "861e323f254b88e4b4e411429f8d1e6b6fa15b00",
+  "git_branch": "main",
+  "git_changed_files_before": [
+    ".calkit/env-locks/nb.txt",
+    ".calkit/notebooks/cleaned/example.ipynb",
+    ".calkit/notebooks/executed/example.ipynb",
+    ".calkit/notebooks/html/example.html",
+    "calkit.yaml",
+    "dvc.yaml",
+    "example.ipynb",
+    "requirements-nb.txt"
+  ],
+  "git_staged_files_before": [
+    ".calkit/notebook-stages/run-sim-nb/outs/.gitignore",
+    "dvc.lock",
+    "dvc.yaml"
+  ],
+  "git_untracked_files_before": [
+    ".calkit/notebook-stages/run-sim-nb/script.py",
+    ".calkit/runs/2025-07-14T23-43-28-ec809acf672d4b938392621e1b18b41b.json",
+    ".calkit/runs/2025-07-14T23-43-45-b18cc66c355e4df5aac463ee4e443e6e.json",
+    ".calkit/runs/2025-07-14T23-44-14-9a1b98b6e01a417487ef6e009298c94d.json",
+    ".calkit/runs/2025-07-14T23-46-48-26098e2d275c4071aaa7af46fdf84eb7.json",
+    ".calkit/runs/2025-07-14T23-55-54-6e5789c7f36942019f19f2ba486089a9.json",
+    ".calkit/runs/2025-07-14T23-56-25-3f5fc4ab5ea54b9980d54fb5ac1a3dbd.json",
+    ".calkit/runs/2025-07-14T23-56-35-044d06f353d741d280fe3ed5c4e3517e.json",
+    ".calkit/runs/2025-07-14T23-56-42-438c2450b97345f5ac37e5b155ac4bac.json",
+    ".calkit/runs/2025-07-15T00-00-49-e9bf45b3ad5b4de3aa726800f3f29d05.json",
+    ".calkit/runs/2025-07-15T00-01-22-47321e98a5f74e098a0a67ce855bc776.json",
+    ".calkit/runs/2025-07-15T00-01-33-9b7232e8889543948535bd915d1df811.json",
+    ".calkit/runs/2025-07-15T00-01-56-95fbb14ccff04286adbdc7796dd12ae2.json",
+    ".calkit/runs/2025-07-15T00-03-10-99403f2f56e8442fa26642067dc90050.json",
+    ".calkit/runs/2025-07-15T00-03-45-67570163a6204e7cb772f69a5cd04366.json",
+    ".calkit/runs/2025-07-15T00-07-45-208f76ca74cd4420a79936a9d9d82734.json",
+    ".calkit/systems/c2722ac36c5b9c2fe9723c1a138c2cb1088cbdce.json"
+  ],
+  "git_changed_files_after": [
+    ".calkit/env-locks/nb.txt",
+    ".calkit/notebooks/cleaned/example.ipynb",
+    ".calkit/notebooks/executed/example.ipynb",
+    ".calkit/notebooks/html/example.html",
+    "calkit.yaml",
+    "dvc.yaml",
+    "example.ipynb",
+    "requirements-nb.txt"
+  ],
+  "git_staged_files_after": [
+    ".calkit/notebook-stages/run-sim-nb/outs/.gitignore",
+    "dvc.lock",
+    "dvc.yaml"
+  ],
+  "git_untracked_files_after": [
+    ".calkit/notebook-stages/run-sim-nb/script.py",
+    ".calkit/runs/2025-07-14T23-43-28-ec809acf672d4b938392621e1b18b41b.json",
+    ".calkit/runs/2025-07-14T23-43-45-b18cc66c355e4df5aac463ee4e443e6e.json",
+    ".calkit/runs/2025-07-14T23-44-14-9a1b98b6e01a417487ef6e009298c94d.json",
+    ".calkit/runs/2025-07-14T23-46-48-26098e2d275c4071aaa7af46fdf84eb7.json",
+    ".calkit/runs/2025-07-14T23-55-54-6e5789c7f36942019f19f2ba486089a9.json",
+    ".calkit/runs/2025-07-14T23-56-25-3f5fc4ab5ea54b9980d54fb5ac1a3dbd.json",
+    ".calkit/runs/2025-07-14T23-56-35-044d06f353d741d280fe3ed5c4e3517e.json",
+    ".calkit/runs/2025-07-14T23-56-42-438c2450b97345f5ac37e5b155ac4bac.json",
+    ".calkit/runs/2025-07-15T00-00-49-e9bf45b3ad5b4de3aa726800f3f29d05.json",
+    ".calkit/runs/2025-07-15T00-01-22-47321e98a5f74e098a0a67ce855bc776.json",
+    ".calkit/runs/2025-07-15T00-01-33-9b7232e8889543948535bd915d1df811.json",
+    ".calkit/runs/2025-07-15T00-01-56-95fbb14ccff04286adbdc7796dd12ae2.json",
+    ".calkit/runs/2025-07-15T00-03-10-99403f2f56e8442fa26642067dc90050.json",
+    ".calkit/runs/2025-07-15T00-03-45-67570163a6204e7cb772f69a5cd04366.json",
+    ".calkit/runs/2025-07-15T00-07-45-208f76ca74cd4420a79936a9d9d82734.json",
+    ".calkit/systems/c2722ac36c5b9c2fe9723c1a138c2cb1088cbdce.json"
+  ],
+  "dvc_status_before": {
+    "_check-env-main": [
+      "always changed"
+    ],
+    "_check-env-nb": [
+      "always changed"
+    ]
+  },
+  "dvc_data_status_before": {
+    "not_in_cache": [],
+    "not_in_remote": [],
+    "committed": {
+      "modified": [
+        "two-dim-nb/"
+      ],
+      "added": [
+        ".calkit/notebook-stages/run-sim-nb/outs/m.pickle"
+      ]
+    },
+    "uncommitted": {},
+    "untracked": [],
+    "unchanged": [
+      "two-dim/analysis/",
+      "two-dim/data/",
+      "two-dim/snapshots/"
+    ]
+  },
+  "dvc_status_after": {
+    "_check-env-main": [
+      "always changed"
+    ],
+    "_check-env-nb": [
+      "always changed"
+    ]
+  },
+  "dvc_data_status_after": {
+    "not_in_cache": [],
+    "not_in_remote": [],
+    "committed": {
+      "modified": [
+        "two-dim-nb/"
+      ],
+      "added": [
+        ".calkit/notebook-stages/run-sim-nb/outs/m.pickle"
+      ]
+    },
+    "uncommitted": {},
+    "untracked": [],
+    "unchanged": [
+      "two-dim/analysis/",
+      "two-dim/data/",
+      "two-dim/snapshots/"
+    ]
+  }
+}

@@ -4,3 +4,4 @@ matplotlib==3.10.3
 numpy==2.2.6
 pyFFTW==0.15.0
 scipy==1.15.3
+calkit-python==0.26.2
