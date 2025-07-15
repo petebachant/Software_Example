@@ -7,7 +7,7 @@ See [`example.ipynb`](example.ipynb) for a "bad" example and [`run.py`](run.py) 
 
 Calkit can be installed with `uv tool install calkit-python`.
 
-Then, to run the pipeline, which includes both the "good" and "bade" examples,
+Then, to run the pipeline, which includes both the "good" and "bad" examples,
 execute:
 
 ```sh
