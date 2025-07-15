@@ -41,9 +41,6 @@ pipeline:
       environment: nb
       inputs:
         - model.py
-      # outputs:
-      #   - path: two-dim-nb
-      #     delete_before_run: false
       html_storage: git
       cleaned_ipynb_storage: git
       executed_ipynb_storage: git

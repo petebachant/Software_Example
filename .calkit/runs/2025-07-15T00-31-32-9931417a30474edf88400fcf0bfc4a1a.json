@@ -1,0 +1,105 @@
+{
+  "id": "9931417a30474edf88400fcf0bfc4a1a",
+  "system_id": "c2722ac36c5b9c2fe9723c1a138c2cb1088cbdce",
+  "start_time": "2025-07-15T00:31:32.675452+00:00",
+  "end_time": "2025-07-15T00:31:34.178529+00:00",
+  "targets": [],
+  "force": false,
+  "dvc_args": [],
+  "status": "completed",
+  "stages": {
+    "_check-env-main": {
+      "start_time": "2025-07-15T00:31:32.815000",
+      "end_time": "2025-07-15T00:31:33.372000",
+      "status": "completed"
+    },
+    "_check-env-nb": {
+      "start_time": "2025-07-15T00:31:33.372000",
+      "end_time": "2025-07-15T00:31:33.881000",
+      "status": "completed"
+    },
+    "run": {
+      "start_time": "2025-07-15T00:31:33.881000",
+      "end_time": "2025-07-15T00:31:33.881000",
+      "status": "skipped"
+    },
+    "post-process": {
+      "start_time": "2025-07-15T00:31:33.922000",
+      "end_time": "2025-07-15T00:31:33.922000",
+      "status": "skipped"
+    },
+    "_clean-nb-run-notebook": {
+      "start_time": "2025-07-15T00:31:33.923000",
+      "end_time": "2025-07-15T00:31:33.923000",
+      "status": "skipped"
+    },
+    "run-notebook": {
+      "start_time": "2025-07-15T00:31:33.925000",
+      "end_time": "2025-07-15T00:31:33.925000",
+      "status": "skipped"
+    },
+    "run-sim-nb": {
+      "start_time": "2025-07-15T00:31:33.928000",
+      "end_time": "2025-07-15T00:31:33.928000",
+      "status": "skipped"
+    }
+  },
+  "git_rev": "b9c2089154eae23d51e8597f34b9ba2932e28cf5",
+  "git_branch": "main",
+  "git_changed_files_before": [
+    "calkit.yaml",
+    "dvc.yaml"
+  ],
+  "git_staged_files_before": [],
+  "git_untracked_files_before": [],
+  "git_changed_files_after": [
+    "calkit.yaml",
+    "dvc.yaml"
+  ],
+  "git_staged_files_after": [],
+  "git_untracked_files_after": [],
+  "dvc_status_before": {
+    "_check-env-main": [
+      "always changed"
+    ],
+    "_check-env-nb": [
+      "always changed"
+    ]
+  },
+  "dvc_data_status_before": {
+    "not_in_cache": [],
+    "not_in_remote": [],
+    "committed": {},
+    "uncommitted": {},
+    "untracked": [],
+    "unchanged": [
+      "two-dim-nb/",
+      "two-dim/data/",
+      "two-dim/analysis/",
+      ".calkit/notebook-stages/run-sim-nb/outs/m.pickle",
+      "two-dim/snapshots/"
+    ]
+  },
+  "dvc_status_after": {
+    "_check-env-main": [
+      "always changed"
+    ],
+    "_check-env-nb": [
+      "always changed"
+    ]
+  },
+  "dvc_data_status_after": {
+    "not_in_cache": [],
+    "not_in_remote": [],
+    "committed": {},
+    "uncommitted": {},
+    "untracked": [],
+    "unchanged": [
+      "two-dim-nb/",
+      "two-dim/data/",
+      "two-dim/analysis/",
+      ".calkit/notebook-stages/run-sim-nb/outs/m.pickle",
+      "two-dim/snapshots/"
+    ]
+  }
+}
