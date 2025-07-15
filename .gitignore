@@ -7,3 +7,4 @@ two-dim
 *.mp4
 *.log
 /two-dim-nb
+.ipynb_checkpoints

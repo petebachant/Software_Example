@@ -15,5 +15,14 @@ calkit run
 ```
 
 Subsequent calls will skip stages if they or their inputs haven't changed.
-It's also possible to open up the notebook and run it from top to bottom
-using the uv-venv environment that is created in `.venv2`.
+It's also possible to open up the notebook in JupyterLab
+using its dedicated environment (created in `.venv2`) with:
+
+```sh
+calkit xenv --name nb jupyter lab
+```
+
+If the pipeline ran successfully, you'll notice the cell that runs the
+simulation will exit quickly since its results have been cached.
+It's possible to push this cache to the cloud so collaborators will also
+not need to rerun the simulation cell.
