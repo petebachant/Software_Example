@@ -31,7 +31,7 @@ m.diffexp = 20
 m.hypodiff = 1e-16  # m-2 s-1
 
 # run
-nsteps = 20000  # number of time steps
+nsteps = 50  # number of time steps
 tsave = 250000.0  # save every tsave seconds
 for i in range(nsteps):
     m.timestep()
