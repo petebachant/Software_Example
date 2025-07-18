@@ -115,8 +115,8 @@ stages:
     deps:
     - path: example.ipynb
       hash: md5
-      md5: f6c409c20f9a88dcb3c029ac542b88f3
-      size: 168940
+      md5: 6ba0650c4e4da049b61b41ec5ed2c586
+      size: 168941
     outs:
     - path: .calkit/notebooks/cleaned/example.ipynb
       hash: md5

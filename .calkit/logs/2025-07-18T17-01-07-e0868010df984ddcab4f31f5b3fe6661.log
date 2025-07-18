@@ -1,0 +1,11 @@
+2025-07-18 17:01:07,457 - INFO - Running stage '_check-env-main':
+2025-07-18 17:01:07,457 - INFO - > calkit check environment --name main
+2025-07-18 17:01:08,069 - INFO - Running stage '_check-env-nb':
+2025-07-18 17:01:08,070 - INFO - > calkit check environment --name nb
+2025-07-18 17:01:08,750 - INFO - Stage 'run' didn't change, skipping
+2025-07-18 17:01:08,754 - INFO - Stage 'post-process' didn't change, skipping
+2025-07-18 17:01:08,759 - INFO - Running stage '_clean-nb-run-nb':
+2025-07-18 17:01:08,759 - INFO - > calkit nb clean "example.ipynb"
+2025-07-18 17:01:10,434 - INFO - Updating lock file 'dvc.lock'
+2025-07-18 17:01:10,443 - INFO - Stage 'run-nb' didn't change, skipping
+2025-07-18 17:01:10,447 - INFO - Stage 'run-nb-sim' didn't change, skipping
