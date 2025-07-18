@@ -34,3 +34,17 @@ pipeline:
         - plots.mplstyle
       outputs:
         - two-dim/analysis
+    run-nb:
+      kind: jupyter-notebook
+      notebook_path: example.ipynb
+      environment: nb
+      inputs:
+        - model.py
+      html_storage: dvc
+      executed_ipynb_storage: dvc
+      cleaned_ipynb_storage: git
+notebooks:
+  - path: example.ipynb
+    title: The notebook
+    description:
+    stage: run-nb

@@ -1,0 +1,169 @@
+{
+  "id": "d1a14a8b148a44b192c68d64314829ed",
+  "system_id": "d0838c34b038c8819f423e6d5613bd2bf07e4ca6",
+  "start_time": "2025-07-18T19:57:53.621711+00:00",
+  "end_time": "2025-07-18T19:58:04.959152+00:00",
+  "targets": [],
+  "force": false,
+  "dvc_args": [],
+  "status": "completed",
+  "stages": {
+    "_check-env-main": {
+      "start_time": "2025-07-18T19:57:53.759000",
+      "end_time": "2025-07-18T19:57:54.188000",
+      "status": "completed"
+    },
+    "_check-env-nb": {
+      "start_time": "2025-07-18T19:57:54.188000",
+      "end_time": "2025-07-18T19:57:54.670000",
+      "status": "completed"
+    },
+    "run": {
+      "start_time": "2025-07-18T19:57:54.670000",
+      "end_time": "2025-07-18T19:57:54.670000",
+      "status": "skipped"
+    },
+    "post-process": {
+      "start_time": "2025-07-18T19:57:54.674000",
+      "end_time": "2025-07-18T19:57:54.674000",
+      "status": "skipped"
+    },
+    "_clean-nb-run-nb": {
+      "start_time": "2025-07-18T19:57:54.677000",
+      "end_time": "2025-07-18T19:57:55.727000",
+      "status": "completed"
+    },
+    "run-nb": {
+      "start_time": "2025-07-18T19:57:55.727000",
+      "end_time": "2025-07-18T19:58:04.676000",
+      "status": "completed"
+    },
+    "run-sim-nb": {
+      "start_time": "2025-07-18T19:58:04.676000",
+      "end_time": "2025-07-18T19:58:04.676000",
+      "status": "skipped"
+    }
+  },
+  "git_rev": "23a60f0936a69a223ab6fcddb8229f8949063ec3",
+  "git_branch": "ck4",
+  "git_changed_files_before": [
+    "calkit.yaml",
+    "dvc.yaml",
+    "example.ipynb"
+  ],
+  "git_staged_files_before": [
+    ".calkit/notebook-stages/run-sim-nb/outs/.gitignore",
+    ".gitignore",
+    "dvc.lock",
+    "dvc.yaml"
+  ],
+  "git_untracked_files_before": [
+    ".calkit/notebook-stages/run-sim-nb/script.py"
+  ],
+  "git_changed_files_after": [
+    "calkit.yaml",
+    "example.ipynb"
+  ],
+  "git_staged_files_after": [
+    ".calkit/notebook-stages/run-sim-nb/outs/.gitignore",
+    ".calkit/notebooks/executed/.gitignore",
+    ".calkit/notebooks/html/.gitignore",
+    ".gitignore",
+    "dvc.lock",
+    "dvc.yaml"
+  ],
+  "git_untracked_files_after": [
+    ".calkit/logs/2025-07-18T19-57-53-d1a14a8b148a44b192c68d64314829ed.log",
+    ".calkit/notebook-stages/run-sim-nb/script.py",
+    ".calkit/notebooks/cleaned/example.ipynb"
+  ],
+  "dvc_status_before": {
+    "_check-env-main": [
+      "always changed"
+    ],
+    "_check-env-nb": [
+      {
+        "changed deps": {
+          "reqs-nb.txt": "modified"
+        }
+      },
+      {
+        "changed outs": {
+          ".calkit/env-locks/nb.txt": "modified"
+        }
+      },
+      "always changed"
+    ],
+    "_clean-nb-run-nb": [
+      {
+        "changed deps": {
+          "example.ipynb": "modified"
+        }
+      },
+      {
+        "changed outs": {
+          ".calkit/notebooks/cleaned/example.ipynb": "deleted"
+        }
+      }
+    ],
+    "run-nb": [
+      {
+        "changed deps": {
+          ".calkit/notebooks/cleaned/example.ipynb": "deleted",
+          "model.py": "modified",
+          ".calkit/env-locks/nb.txt": "modified"
+        }
+      },
+      {
+        "changed outs": {
+          ".calkit/notebooks/executed/example.ipynb": "deleted",
+          ".calkit/notebooks/html/example.html": "deleted"
+        }
+      }
+    ]
+  },
+  "dvc_data_status_before": {
+    "not_in_cache": [],
+    "not_in_remote": [],
+    "committed": {
+      "added": [
+        "two-dim-nb/",
+        ".calkit/notebook-stages/run-sim-nb/outs/m.pickle"
+      ]
+    },
+    "uncommitted": {},
+    "untracked": [],
+    "unchanged": [
+      "two-dim/analysis/",
+      "two-dim/data/",
+      "two-dim/snapshots/"
+    ]
+  },
+  "dvc_status_after": {
+    "_check-env-main": [
+      "always changed"
+    ],
+    "_check-env-nb": [
+      "always changed"
+    ]
+  },
+  "dvc_data_status_after": {
+    "not_in_cache": [],
+    "not_in_remote": [],
+    "committed": {
+      "added": [
+        "two-dim-nb/",
+        ".calkit/notebooks/html/example.html",
+        ".calkit/notebooks/executed/example.ipynb",
+        ".calkit/notebook-stages/run-sim-nb/outs/m.pickle"
+      ]
+    },
+    "uncommitted": {},
+    "untracked": [],
+    "unchanged": [
+      "two-dim/analysis/",
+      "two-dim/data/",
+      "two-dim/snapshots/"
+    ]
+  }
+}

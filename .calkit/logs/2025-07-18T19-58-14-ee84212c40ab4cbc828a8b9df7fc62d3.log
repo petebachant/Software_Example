@@ -1,0 +1,9 @@
+2025-07-18 19:58:14,777 - INFO - Running stage '_check-env-main':
+2025-07-18 19:58:14,777 - INFO - > calkit check environment --name main
+2025-07-18 19:58:15,193 - INFO - Running stage '_check-env-nb':
+2025-07-18 19:58:15,194 - INFO - > calkit check environment --name nb
+2025-07-18 19:58:15,661 - INFO - Stage 'run' didn't change, skipping
+2025-07-18 19:58:15,664 - INFO - Stage 'post-process' didn't change, skipping
+2025-07-18 19:58:15,665 - INFO - Stage '_clean-nb-run-nb' didn't change, skipping
+2025-07-18 19:58:15,667 - INFO - Stage 'run-nb' didn't change, skipping
+2025-07-18 19:58:15,669 - INFO - Stage 'run-sim-nb' didn't change, skipping
