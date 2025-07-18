@@ -1,0 +1,142 @@
+{
+  "id": "0d3c83ebc7e245858b43b214249eef57",
+  "system_id": "bdeaf677f3a2bf538c530486278e74cda6ebe199",
+  "start_time": "2025-07-18T14:38:59.112737+00:00",
+  "end_time": "2025-07-18T14:39:01.000140+00:00",
+  "targets": [],
+  "force": false,
+  "dvc_args": [],
+  "status": "completed",
+  "stages": {
+    "_check-env-main": {
+      "start_time": "2025-07-18T14:38:59.258000",
+      "end_time": "2025-07-18T14:38:59.866000",
+      "status": "completed"
+    },
+    "_check-env-nb": {
+      "start_time": "2025-07-18T14:38:59.866000",
+      "end_time": "2025-07-18T14:39:00.558000",
+      "status": "completed"
+    },
+    "run": {
+      "start_time": "2025-07-18T14:39:00.558000",
+      "end_time": "2025-07-18T14:39:00.558000",
+      "status": "skipped"
+    },
+    "post-process": {
+      "start_time": "2025-07-18T14:39:00.564000",
+      "end_time": "2025-07-18T14:39:00.564000",
+      "status": "skipped"
+    },
+    "_clean-nb-run-nb": {
+      "start_time": "2025-07-18T14:39:00.567000",
+      "end_time": "2025-07-18T14:39:00.567000",
+      "status": "skipped"
+    },
+    "run-nb": {
+      "start_time": "2025-07-18T14:39:00.570000",
+      "end_time": "2025-07-18T14:39:00.570000",
+      "status": "skipped"
+    },
+    "run-sim-nb": {
+      "start_time": "2025-07-18T14:39:00.574000",
+      "end_time": "2025-07-18T14:39:00.574000",
+      "status": "skipped"
+    }
+  },
+  "git_rev": "360a66a9d18d759a2f5f1db33d4a4c77cf63f580",
+  "git_branch": "ck2",
+  "git_changed_files_before": [
+    "calkit.yaml",
+    "dvc.yaml",
+    "example.ipynb"
+  ],
+  "git_staged_files_before": [
+    ".calkit/notebook-stages/run-sim-nb/outs/.gitignore",
+    ".calkit/notebooks/executed/.gitignore",
+    ".calkit/notebooks/html/.gitignore",
+    ".gitignore",
+    "dvc.lock",
+    "dvc.yaml"
+  ],
+  "git_untracked_files_before": [
+    ".calkit/logs/2025-07-18T14-38-39-61ffa90460c648a79b0098ca301f8daa.log",
+    ".calkit/notebook-stages/run-sim-nb/script.py",
+    ".calkit/notebooks/cleaned/example.ipynb",
+    ".calkit/runs/2025-07-18T14-38-39-61ffa90460c648a79b0098ca301f8daa.json"
+  ],
+  "git_changed_files_after": [
+    "calkit.yaml",
+    "dvc.yaml",
+    "example.ipynb"
+  ],
+  "git_staged_files_after": [
+    ".calkit/notebook-stages/run-sim-nb/outs/.gitignore",
+    ".calkit/notebooks/executed/.gitignore",
+    ".calkit/notebooks/html/.gitignore",
+    ".gitignore",
+    "dvc.lock",
+    "dvc.yaml"
+  ],
+  "git_untracked_files_after": [
+    ".calkit/logs/2025-07-18T14-38-39-61ffa90460c648a79b0098ca301f8daa.log",
+    ".calkit/logs/2025-07-18T14-38-59-0d3c83ebc7e245858b43b214249eef57.log",
+    ".calkit/notebook-stages/run-sim-nb/script.py",
+    ".calkit/notebooks/cleaned/example.ipynb",
+    ".calkit/runs/2025-07-18T14-38-39-61ffa90460c648a79b0098ca301f8daa.json"
+  ],
+  "dvc_status_before": {
+    "_check-env-main": [
+      "always changed"
+    ],
+    "_check-env-nb": [
+      "always changed"
+    ]
+  },
+  "dvc_data_status_before": {
+    "not_in_cache": [],
+    "not_in_remote": [],
+    "committed": {
+      "added": [
+        "two-dim-nb/",
+        ".calkit/notebooks/html/example.html",
+        ".calkit/notebooks/executed/example.ipynb",
+        ".calkit/notebook-stages/run-sim-nb/outs/m.pickle"
+      ]
+    },
+    "uncommitted": {},
+    "untracked": [],
+    "unchanged": [
+      "two-dim/analysis/",
+      "two-dim/data/",
+      "two-dim/snapshots/"
+    ]
+  },
+  "dvc_status_after": {
+    "_check-env-main": [
+      "always changed"
+    ],
+    "_check-env-nb": [
+      "always changed"
+    ]
+  },
+  "dvc_data_status_after": {
+    "not_in_cache": [],
+    "not_in_remote": [],
+    "committed": {
+      "added": [
+        "two-dim-nb/",
+        ".calkit/notebooks/html/example.html",
+        ".calkit/notebooks/executed/example.ipynb",
+        ".calkit/notebook-stages/run-sim-nb/outs/m.pickle"
+      ]
+    },
+    "uncommitted": {},
+    "untracked": [],
+    "unchanged": [
+      "two-dim/analysis/",
+      "two-dim/data/",
+      "two-dim/snapshots/"
+    ]
+  }
+}

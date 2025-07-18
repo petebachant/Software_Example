@@ -71,3 +71,73 @@ stages:
       md5: 87ae6742de6472c78a8ca3a023bb4d76.dir
       size: 500562
       nfiles: 6
+  run-sim-nb:
+    cmd: calkit xenv -n nb -- python 
+      ".calkit/notebook-stages/run-sim-nb/script.py"
+    deps:
+    - path: .calkit/notebook-stages/run-sim-nb/script.py
+      hash: md5
+      md5: 09df4539c823297d5be81db75e59b6d2
+      size: 745
+    - path: model.py
+      hash: md5
+      md5: 33e480dd5d40b3cf20089da48324f028
+      size: 22161
+    outs:
+    - path: .calkit/notebook-stages/run-sim-nb/outs/m.pickle
+      hash: md5
+      md5: fd495ca4a169f15d4ab5d1778359b6b5
+      size: 204004
+    - path: two-dim-nb
+      hash: md5
+      md5: 3698f85f475b9c0c335860159ff9ae75.dir
+      size: 234664
+      nfiles: 3
+  _check-env-nb:
+    cmd: calkit check environment --name nb
+    deps:
+    - path: reqs-nb.txt
+      hash: md5
+      md5: 028679b68edc2fa840ba7650487edcce
+      size: 173
+    outs:
+    - path: .calkit/env-locks/nb.txt
+      hash: md5
+      md5: a4460ef02ae106a1636845ac86d882f5
+      size: 3732
+  _clean-nb-run-nb:
+    cmd: calkit nb clean "example.ipynb"
+    deps:
+    - path: example.ipynb
+      hash: md5
+      md5: fa4b8eaa0dd79e921a73b390d28b7612
+      size: 184561
+    outs:
+    - path: .calkit/notebooks/cleaned/example.ipynb
+      hash: md5
+      md5: 6b12752a19c917c8baafd98ef4ec1c52
+      size: 7678
+  run-nb:
+    cmd: calkit nb execute --environment nb --no-check --to html "example.ipynb"
+    deps:
+    - path: .calkit/env-locks/nb.txt
+      hash: md5
+      md5: a4460ef02ae106a1636845ac86d882f5
+      size: 3732
+    - path: .calkit/notebooks/cleaned/example.ipynb
+      hash: md5
+      md5: 6b12752a19c917c8baafd98ef4ec1c52
+      size: 7678
+    - path: model.py
+      hash: md5
+      md5: 33e480dd5d40b3cf20089da48324f028
+      size: 22161
+    outs:
+    - path: .calkit/notebooks/executed/example.ipynb
+      hash: md5
+      md5: f80a5493a1d9232be523a72ee813e729
+      size: 510889
+    - path: .calkit/notebooks/html/example.html
+      hash: md5
+      md5: c0a4324e571043136e871d45656d7ae1
+      size: 815192
