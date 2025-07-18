@@ -1,3 +1,9 @@
 name: software_example
 title: Example
 description:
+environments:
+  main:
+    path: requirements.txt
+    kind: uv-venv
+    prefix: .venv
+    python: '3.13'
