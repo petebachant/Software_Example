@@ -1,0 +1,4 @@
+2025-07-18 16:49:41,225 - INFO - Running stage '_check-env-main':
+2025-07-18 16:49:41,225 - INFO - > calkit check environment --name main
+2025-07-18 16:49:41,889 - INFO - Stage 'run' didn't change, skipping
+2025-07-18 16:49:41,894 - INFO - Stage 'post-process' didn't change, skipping

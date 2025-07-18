@@ -38,3 +38,41 @@ stages:
       md5: 898f202bc2df0dc7543647a42fb36584.dir
       size: 30851
       nfiles: 2
+  post-process:
+    cmd: calkit xenv -n main --no-check -- python postprocess.py
+    deps:
+    - path: .calkit/env-locks/main.txt
+      hash: md5
+      md5: b9c363d71acbfdab69715b26758838c8
+      size: 697
+    - path: analysis_utils.py
+      hash: md5
+      md5: 82be04856bdf017c4ee9c8bc5789afbd
+      size: 5010
+    - path: model.py
+      hash: md5
+      md5: 33e480dd5d40b3cf20089da48324f028
+      size: 22161
+    - path: plots.mplstyle
+      hash: md5
+      md5: 17ad5c2a561e2ab40a3c3ae96a8017ea
+      size: 1322
+    - path: plotting_utils.py
+      hash: md5
+      md5: dbaf22a0d47f64e521121f461eb06654
+      size: 3435
+    - path: postprocess.py
+      hash: md5
+      md5: 489948e2e3abc318c9c925dd07cec6d2
+      size: 1996
+    - path: two-dim/data
+      hash: md5
+      md5: 37c54a6dc8e3ea73e34b36721a97d38d.dir
+      size: 204004
+      nfiles: 1
+    outs:
+    - path: two-dim/analysis
+      hash: md5
+      md5: 8fc96bfc7ee3af6b85ebfb1afe6eb412.dir
+      size: 500720
+      nfiles: 6

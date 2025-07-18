@@ -21,3 +21,17 @@ stages:
       - two-dim/snapshots
     desc: Automatically generated from the 'run' stage in calkit.yaml.
       Changes made here will be overwritten.
+  post-process:
+    cmd: calkit xenv -n main --no-check -- python postprocess.py
+    deps:
+      - postprocess.py
+      - model.py
+      - plotting_utils.py
+      - analysis_utils.py
+      - plots.mplstyle
+      - two-dim/data
+      - .calkit/env-locks/main.txt
+    outs:
+      - two-dim/analysis
+    desc: Automatically generated from the 'post-process' stage in 
+      calkit.yaml. Changes made here will be overwritten.
