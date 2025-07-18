@@ -18,3 +18,14 @@ pipeline:
       outputs:
         - two-dim/data
         - two-dim/snapshots
+    post-process:
+      kind: python-script
+      script_path: postprocess.py
+      environment: main
+      inputs:
+        - model.py
+        - plotting_utils.py
+        - analysis_utils.py
+        - plots.mplstyle
+      outputs:
+        - two-dim/analysis
