@@ -1,0 +1,6 @@
+2025-07-18 14:30:43,848 - INFO - Running stage '_check-env-main':
+2025-07-18 14:30:43,849 - INFO - > calkit check environment --name main
+2025-07-18 14:30:44,491 - INFO - Stage 'run' didn't change, skipping
+2025-07-18 14:30:44,502 - INFO - Running stage 'post-process':
+2025-07-18 14:30:44,502 - INFO - > calkit xenv -n main --no-check -- python postprocess.py
+2025-07-18 14:30:46,568 - INFO - Updating lock file 'dvc.lock'
