@@ -1,0 +1,100 @@
+{
+  "id": "08178e090c044a988567af42f18c2ef3",
+  "system_id": "bdeaf677f3a2bf538c530486278e74cda6ebe199",
+  "start_time": "2025-07-18T02:28:59.268128+00:00",
+  "end_time": "2025-07-18T02:29:00.229801+00:00",
+  "targets": [],
+  "force": false,
+  "dvc_args": [],
+  "status": "completed",
+  "stages": {
+    "_check-env-main": {
+      "start_time": "2025-07-18T02:28:59.376000",
+      "end_time": "2025-07-18T02:29:00.027000",
+      "status": "completed"
+    },
+    "run": {
+      "start_time": "2025-07-18T02:29:00.027000",
+      "end_time": "2025-07-18T02:29:00.027000",
+      "status": "skipped"
+    },
+    "post-process": {
+      "start_time": "2025-07-18T02:29:00.032000",
+      "end_time": "2025-07-18T02:29:00.032000",
+      "status": "skipped"
+    }
+  },
+  "git_rev": "20158916a5e8abe60479281538e9a058867c14ee",
+  "git_branch": "ck",
+  "git_changed_files_before": [
+    ".dvc/config",
+    "calkit.yaml"
+  ],
+  "git_staged_files_before": [],
+  "git_untracked_files_before": [
+    ".calkit/logs/2025-07-18T02-26-25-b982e19407d14047a4da76377443d5f5.log",
+    ".calkit/logs/2025-07-18T02-26-40-8a05935bc7524351b4e31ee7cff57c0a.log",
+    ".calkit/logs/2025-07-18T02-28-52-2f3d4fde5776448b8ef2376bac4da999.log",
+    ".calkit/runs/2025-07-18T02-26-25-b982e19407d14047a4da76377443d5f5.json",
+    ".calkit/runs/2025-07-18T02-26-40-8a05935bc7524351b4e31ee7cff57c0a.json",
+    ".calkit/runs/2025-07-18T02-28-52-2f3d4fde5776448b8ef2376bac4da999.json",
+    ".calkit/systems/bdeaf677f3a2bf538c530486278e74cda6ebe199.json",
+    "dvc.lock",
+    "dvc.yaml"
+  ],
+  "git_changed_files_after": [
+    ".dvc/config",
+    "calkit.yaml"
+  ],
+  "git_staged_files_after": [],
+  "git_untracked_files_after": [
+    ".calkit/logs/2025-07-18T02-26-25-b982e19407d14047a4da76377443d5f5.log",
+    ".calkit/logs/2025-07-18T02-26-40-8a05935bc7524351b4e31ee7cff57c0a.log",
+    ".calkit/logs/2025-07-18T02-28-52-2f3d4fde5776448b8ef2376bac4da999.log",
+    ".calkit/logs/2025-07-18T02-28-59-08178e090c044a988567af42f18c2ef3.log",
+    ".calkit/runs/2025-07-18T02-26-25-b982e19407d14047a4da76377443d5f5.json",
+    ".calkit/runs/2025-07-18T02-26-40-8a05935bc7524351b4e31ee7cff57c0a.json",
+    ".calkit/runs/2025-07-18T02-28-52-2f3d4fde5776448b8ef2376bac4da999.json",
+    ".calkit/systems/bdeaf677f3a2bf538c530486278e74cda6ebe199.json",
+    "dvc.lock",
+    "dvc.yaml"
+  ],
+  "dvc_status_before": {
+    "_check-env-main": [
+      "always changed"
+    ]
+  },
+  "dvc_data_status_before": {
+    "not_in_cache": [],
+    "not_in_remote": [],
+    "committed": {
+      "added": [
+        "two-dim/analysis/",
+        "two-dim/data/",
+        "two-dim/snapshots/"
+      ]
+    },
+    "uncommitted": {},
+    "untracked": [],
+    "unchanged": []
+  },
+  "dvc_status_after": {
+    "_check-env-main": [
+      "always changed"
+    ]
+  },
+  "dvc_data_status_after": {
+    "not_in_cache": [],
+    "not_in_remote": [],
+    "committed": {
+      "added": [
+        "two-dim/analysis/",
+        "two-dim/data/",
+        "two-dim/snapshots/"
+      ]
+    },
+    "uncommitted": {},
+    "untracked": [],
+    "unchanged": []
+  }
+}

@@ -1,0 +1,65 @@
+schema: '2.0'
+stages:
+  _check-env-main:
+    cmd: calkit check environment --name main
+    deps:
+    - path: requirements.txt
+      hash: md5
+      md5: 82abbee06642a7390ea04a88b634d25c
+      size: 150
+    outs:
+    - path: .calkit/env-locks/main.txt
+      hash: md5
+      md5: b9c363d71acbfdab69715b26758838c8
+      size: 697
+  run:
+    cmd: calkit xenv -n main --no-check -- python run.py
+    deps:
+    - path: .calkit/env-locks/main.txt
+      hash: md5
+      md5: b9c363d71acbfdab69715b26758838c8
+      size: 697
+    - path: model.py
+      hash: md5
+      md5: 33e480dd5d40b3cf20089da48324f028
+      size: 22161
+    - path: run.py
+      hash: md5
+      md5: 26643454ddb33a88c4edf73ff2fdbbe1
+      size: 915
+    outs:
+    - path: two-dim/data
+      hash: md5
+      md5: 0eb0bc89e13fa246d3fd49c7bd379c45.dir
+      size: 204004
+      nfiles: 1
+    - path: two-dim/snapshots
+      hash: md5
+      md5: 4a5c02b1dea29c340c75db8089b3b322.dir
+      size: 30780
+      nfiles: 2
+  post-process:
+    cmd: calkit xenv -n main --no-check -- python postprocess.py
+    deps:
+    - path: .calkit/env-locks/main.txt
+      hash: md5
+      md5: b9c363d71acbfdab69715b26758838c8
+      size: 697
+    - path: analysis_utils.py
+      hash: md5
+      md5: 82be04856bdf017c4ee9c8bc5789afbd
+      size: 5010
+    - path: plotting_utils.py
+      hash: md5
+      md5: dbaf22a0d47f64e521121f461eb06654
+      size: 3435
+    - path: postprocess.py
+      hash: md5
+      md5: 489948e2e3abc318c9c925dd07cec6d2
+      size: 1996
+    outs:
+    - path: two-dim/analysis
+      hash: md5
+      md5: 9c18eb8ed040f7e12d831522f7cae322.dir
+      size: 507144
+      nfiles: 6

@@ -6,4 +6,24 @@ environments:
     path: requirements.txt
     kind: uv-venv
     prefix: .venv
-    python: '3.13'
+    python: "3.13"
+pipeline:
+  stages:
+    run:
+      kind: python-script
+      script_path: run.py
+      environment: main
+      inputs:
+        - model.py
+      outputs:
+        - two-dim/data
+        - two-dim/snapshots
+    post-process:
+      kind: python-script
+      script_path: postprocess.py
+      environment: main
+      inputs:
+        - plotting_utils.py
+        - analysis_utils.py
+      outputs:
+        - two-dim/analysis
