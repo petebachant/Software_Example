@@ -1,0 +1,15 @@
+2025-07-18 19:47:27,823 - INFO - Running stage '_check-env-main':
+2025-07-18 19:47:27,823 - INFO - > calkit check environment --name main
+2025-07-18 19:47:28,299 - INFO - Generating lock file 'dvc.lock'
+2025-07-18 19:47:28,299 - INFO - Updating lock file 'dvc.lock'
+2025-07-18 19:47:28,305 - INFO - Running stage 'run':
+2025-07-18 19:47:28,305 - INFO - > calkit xenv -n main --no-check -- python run.py
+2025-07-18 19:47:33,108 - INFO - Updating lock file 'dvc.lock'
+2025-07-18 19:47:33,109 - INFO - 
+To track the changes with git, run:
+
+	git add dvc.lock
+2025-07-18 19:47:33,109 - INFO - 
+To enable auto staging, run:
+
+	dvc config core.autostage true

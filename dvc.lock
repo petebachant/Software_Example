@@ -1,0 +1,40 @@
+schema: '2.0'
+stages:
+  _check-env-main:
+    cmd: calkit check environment --name main
+    deps:
+    - path: requirements.txt
+      hash: md5
+      md5: 82abbee06642a7390ea04a88b634d25c
+      size: 150
+    outs:
+    - path: .calkit/env-locks/main.txt
+      hash: md5
+      md5: b9c363d71acbfdab69715b26758838c8
+      size: 697
+  run:
+    cmd: calkit xenv -n main --no-check -- python run.py
+    deps:
+    - path: .calkit/env-locks/main.txt
+      hash: md5
+      md5: b9c363d71acbfdab69715b26758838c8
+      size: 697
+    - path: model.py
+      hash: md5
+      md5: 33e480dd5d40b3cf20089da48324f028
+      size: 22161
+    - path: run.py
+      hash: md5
+      md5: 26643454ddb33a88c4edf73ff2fdbbe1
+      size: 915
+    outs:
+    - path: two-dim/data
+      hash: md5
+      md5: 6be91b61263730b412499aa0d0953704.dir
+      size: 204004
+      nfiles: 1
+    - path: two-dim/snapshots
+      hash: md5
+      md5: 2a7b5a57fb7d28ca1b29ae28d938e823.dir
+      size: 30656
+      nfiles: 2
